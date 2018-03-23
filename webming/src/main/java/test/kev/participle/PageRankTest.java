@@ -31,7 +31,7 @@ public class PageRankTest {
      */
     @Test
     public void testPageRankOnce() throws Exception {
-        String text = TextRead.textRead("E:\\a.txt");
+        String text = TextReadAndWrite.textRead("E:\\a.txt");
         List<Word> wordList = TextTowordAnsj.textToWord(text);
         List<Word> wordGraphList = Tools.buildGraphList(wordList, 3);
         System.out.println(wordList.size() + "---" + wordGraphList.size());
@@ -46,11 +46,11 @@ public class PageRankTest {
      */
     @Test
     public void testPageRank() throws Exception {
-        String text = TextRead.textRead("E:\\a.txt");
+        String text = TextReadAndWrite.textRead("E:\\a.txt");
         List<Word> wordList = TextTowordAnsj.textToWord(text);
-        List<Word> wordGraphList = Tools.buildGraphList(wordList, 30);
+        List<Word> wordGraphList = Tools.buildGraphList(wordList, 10);
         System.out.println(wordList.size() + "---" + wordGraphList.size());
-        wordGraphList = PageRank.pageRank(wordGraphList, 0.01);
+        wordGraphList = PageRank.pageRank(wordGraphList, 0.001);
         for (Word word : wordGraphList) {
             System.out.println(word.getValue() + "----" + word.getPrValue());
         }
@@ -59,7 +59,6 @@ public class PageRankTest {
         for (Word word : topT) {
             System.out.println(word.getValue() + "----" + word.getPrValue());
         }
-
     }
 
 

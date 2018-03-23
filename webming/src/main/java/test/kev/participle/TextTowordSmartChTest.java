@@ -1,6 +1,6 @@
 package test.kev.participle;
 
-import kev.participle.TextRead;
+import kev.participle.TextReadAndWrite;
 import kev.participle.TextTowordSmartCh;
 import org.junit.After;
 import org.junit.Before;
@@ -38,7 +38,7 @@ public class TextTowordSmartChTest {
      */
     @Test
     public void testTextToWordSentenceList() throws Exception {
-        String text = TextRead.textRead("E:\\a.txt");
+        String text = TextReadAndWrite.textRead("E:\\a.txt");
         TextTowordSmartCh.textToWord(text);
     }
 

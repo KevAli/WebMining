@@ -38,7 +38,7 @@ public class TextTowordAnsj {
         }};
         //分词结果的一个封装，主要是一个List<Term>的terms
         Result result = ToAnalysis.parse(text);
-        System.out.println(result.getTerms());
+//        System.out.println(result.getTerms());
 
         List<Term> terms = result.getTerms(); //拿到terms
 //        System.out.println(terms.size());

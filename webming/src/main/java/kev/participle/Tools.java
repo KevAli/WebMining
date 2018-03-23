@@ -1,5 +1,16 @@
 package kev.participle;
 
+import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.TokenStream;
+import org.apache.lucene.document.Document;
+import org.apache.lucene.search.Query;
+import org.apache.lucene.search.highlight.Highlighter;
+import org.apache.lucene.search.highlight.InvalidTokenOffsetsException;
+import org.apache.lucene.search.highlight.QueryScorer;
+import org.apache.lucene.search.highlight.SimpleHTMLFormatter;
+
+import java.io.IOException;
+import java.io.StringReader;
 import java.util.*;
 
 /**
@@ -100,6 +111,56 @@ public class Tools {
         });
         List<Word> topTList = wordList.subList(0, t);
         return topTList;
+    }
+
+    /**
+     * 高亮设置
+     *
+     * @param query
+     * @param doc
+     * @return
+     */
+    private String toHighlighter(Analyzer analyzer, Query query, Document doc) {
+        String field = "text";
+        try {
+            SimpleHTMLFormatter simpleHtmlFormatter = new SimpleHTMLFormatter("<font color=\"red\">", "</font>");
+            Highlighter highlighter = new Highlighter(simpleHtmlFormatter, new QueryScorer(query));
+            TokenStream tokenStream1 = analyzer.tokenStream("text", new StringReader(doc.get(field)));
+            String highlighterStr = highlighter.getBestFragment(tokenStream1, doc.get(field));
+            return highlighterStr == null ? doc.get(field) : highlighterStr;
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (InvalidTokenOffsetsException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static List<String> wordTOPhrase(List<Word> wordList) {
+        Set<String> PhraseSet = new HashSet<String>();
+        for (int i = 0; i < wordList.size(); i++) {
+            for (int j = i; j < wordList.size(); j++) {
+                Word word1 = wordList.get(i);
+                Word word2 = wordList.get(j);
+                if (word1.getValue() != word2.getValue()) {
+                    for (int index1 : word1.getIndexList()) {
+                        for (int index2 : word2.getIndexList()) {
+                            if (Math.abs((index1 + word1.getValue().length()) - index2) <= 1) {
+                                Word phrase = new Word(word1.getValue() + word2.getValue(), word1.getIndexList(), word1.getType());
+                                PhraseSet.add(word1.getValue() + word2.getValue());
+                            }
+                            if (Math.abs((index2 + word2.getValue().length()) - index1) <= 1) {
+                                Word phrase = new Word(word2.getValue() + word1.getValue(), word2.getIndexList(), word2.getType());
+                                PhraseSet.add(word2.getValue() + word1.getValue());
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        List<String> PhraseList = new ArrayList<String>(PhraseSet);
+        return PhraseList;
+
     }
 
 }

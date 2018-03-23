@@ -3,6 +3,7 @@ package kev.participle;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 
 /**
  * \* Created with IntelliJ IDEA.
@@ -13,9 +14,9 @@ import java.io.FileReader;
  * \* Description:
  * \
  */
-public class TextRead {
-    public static String textRead(String TextPath) {
-        File textFile = new File(TextPath);
+public class TextReadAndWrite {
+    public static String textRead(String textPath) {
+        File textFile = new File(textPath);
         BufferedReader reader = null;
         StringBuffer text = new StringBuffer();
         String tempString = null;
@@ -34,8 +35,18 @@ public class TextRead {
                 e.printStackTrace();
             }
         }
-        System.out.println(text);
+//        System.out.println(text);
 
         return text.toString();
+    }
+
+    public static void textWrite(String textPath, String text) {
+        try {
+            FileWriter fw = new FileWriter(textPath);
+            fw.write(text);
+            fw.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -17,9 +17,11 @@ public class PageRank {
     public static List<Word> pageRankOnce(List<Word> wordGraph) {
         Map<Word, Double> prMap = new HashMap<Word, Double>();
         double totalPR = 0;
+        int prCount = 0;
         for (Word word : wordGraph) {
             prMap.put(word, 0.0);
             totalPR += word.getPrValue();
+            prCount++;
 
         }
         for (Word key : wordGraph) {
@@ -32,7 +34,7 @@ public class PageRank {
             }
         }
         for (Word word : wordGraph) {
-            double newPR = prMap.get(word) * 0.85 + 0.15;
+            double newPR = prMap.get(word) * 0.85 + 0.15 * totalPR / prCount;
             word.setPrValue(newPR);
         }
         return wordGraph;

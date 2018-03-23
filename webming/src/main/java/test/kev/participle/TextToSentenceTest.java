@@ -1,6 +1,6 @@
 package test.kev.participle;
 
-import kev.participle.TextRead;
+import kev.participle.TextReadAndWrite;
 import kev.participle.TextToSentence;
 import org.junit.After;
 import org.junit.Before;
@@ -30,7 +30,7 @@ public class TextToSentenceTest {
      */
     @Test
     public void testTextToSentence() throws Exception {
-        String text = TextRead.textRead("E:\\a.txt");
+        String text = TextReadAndWrite.textRead("E:\\a.txt");
         TextToSentence.textToSentence(text);
     }
 

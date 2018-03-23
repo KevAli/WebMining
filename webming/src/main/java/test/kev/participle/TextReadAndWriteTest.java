@@ -1,18 +1,18 @@
 package test.kev.participle;
 
-import kev.participle.TextRead;
+import kev.participle.TextReadAndWrite;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 /**
- * TextRead Tester.
+ * TextReadAndWrite Tester.
  *
  * @author <Authors name>
  * @version 1.0
  * @since <pre>03/21/2018</pre>
  */
-public class TextReadTest {
+public class TextReadAndWriteTest {
 
     @Before
     public void before() throws Exception {
@@ -29,7 +29,7 @@ public class TextReadTest {
      */
     @Test
     public void testTextRead() throws Exception {
-        TextRead.textRead("E:\\a.txt");
+        TextReadAndWrite.textRead("E:\\a.txt");
 
     }
 

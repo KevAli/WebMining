@@ -1,0 +1,159 @@
+
+<!-- saved from url=(0089)http://nlpchina.github.io/ansj_seg/content.html?name=%E8%AF%8D%E6%80%A7%E8%AF%B4%E6%98%8E -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link href="./github-3edaf451c5611e17e1cd26dd9e684f8c2ff7cdab.css" media="all" rel="stylesheet" type="text/css">
+<link href="./github2-456a392493f696a3779ecd85c4913acdef7d9507.css" media="all" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./default.css">
+<script src="./highlight.pack.js.下载"></script>
+<script src="./marked.js.下载"></script>
+<script src="./jquery-1.9.0.js.下载"></script>
+
+</head>
+
+<body style="zoom: 1;">
+	<div class="only-with-full-nav"></div>
+
+       
+  	<div id="readme" class="blob instapaper_body">
+    		<article class="markdown-body entry-content" itemprop="mainContentOfPage" id="content"><h1 id="-">词性说明</h1>
+<p>汉语文本词性标注标记集</p>
+<pre><code class=" hljs ruby"><span class="hljs-comment"># 1. 名词  (1个一类，7个二类，5个三类)</span>
+名词分为以下子类：
+n 名词
+nr 人名
+nr1 汉语姓氏
+nr2 汉语名字
+nrj 日语人名
+nrf 音译人名
+ns 地名
+nsf 音译地名
+nt 机构团体名
+nz 其它专名
+nl 名词性惯用语
+ng 名词性语素
+nw 新词
+<span class="hljs-comment"># 2. 时间词(1个一类，1个二类)</span>
+t 时间词
+tg 时间词性语素
+<span class="hljs-comment"># 3. 处所词(1个一类)</span>
+s 处所词
+<span class="hljs-comment"># 4. 方位词(1个一类)</span>
+f 方位词
+<span class="hljs-comment"># 5. 动词(1个一类，9个二类)</span>
+v 动词
+vd 副动词
+vn 名动词
+vshi 动词“是”
+vyou 动词“有”
+vf 趋向动词
+vx 形式动词
+vi 不及物动词（内动词）
+vl 动词性惯用语
+vg 动词性语素
+<span class="hljs-comment"># 6. 形容词(1个一类，4个二类)</span>
+a 形容词
+ad 副形词
+an 名形词
+ag 形容词性语素
+al 形容词性惯用语
+<span class="hljs-comment"># 7. 区别词(1个一类，2个二类)</span>
+b 区别词
+bl 区别词性惯用语
+<span class="hljs-comment"># 8. 状态词(1个一类)</span>
+z 状态词
+<span class="hljs-comment"># 9. 代词(1个一类，4个二类，6个三类)</span>
+r 代词
+rr 人称代词
+rz 指示代词
+rzt 时间指示代词
+rzs 处所指示代词
+rzv 谓词性指示代词
+ry 疑问代词
+ryt 时间疑问代词
+rys 处所疑问代词
+ryv 谓词性疑问代词
+rg 代词性语素
+<span class="hljs-comment"># 10. 数词(1个一类，1个二类)</span>
+m 数词
+mq 数量词
+<span class="hljs-comment"># 11. 量词(1个一类，2个二类)</span>
+q 量词
+qv 动量词
+qt 时量词
+<span class="hljs-comment"># 12. 副词(1个一类)</span>
+d 副词
+<span class="hljs-comment"># 13. 介词(1个一类，2个二类)</span>
+p 介词
+pba 介词“把”
+pbei 介词“被”
+<span class="hljs-comment"># 14. 连词(1个一类，1个二类)</span>
+c 连词
+ cc 并列连词
+<span class="hljs-comment"># 15. 助词(1个一类，15个二类)</span>
+u 助词
+uzhe 着
+ule 了 喽
+uguo 过
+ude1 的 底
+ude2 地
+ude3 得
+usuo 所
+udeng 等 等等 云云
+uyy 一样 一般 似的 般
+udh 的话
+uls 来讲 来说 而言 说来
+uzhi 之
+ulian 连 （“连小学生都会”）
+<span class="hljs-comment"># 16. 叹词(1个一类)</span>
+e 叹词
+<span class="hljs-comment"># 17. 语气词(1个一类)</span>
+y 语气词(delete yg)
+<span class="hljs-comment"># 18. 拟声词(1个一类)</span>
+o 拟声词
+<span class="hljs-comment"># 19. 前缀(1个一类)</span>
+h 前缀
+<span class="hljs-comment"># 20. 后缀(1个一类)</span>
+k 后缀
+<span class="hljs-comment"># 21. 字符串(1个一类，2个二类)</span>
+x 字符串
+ xx 非语素字
+ xu 网址<span class="hljs-constant">URL</span>
+<span class="hljs-comment"># 22. 标点符号(1个一类，16个二类)</span>
+w 标点符号
+wkz 左括号，全角：（ 〔  ［  ｛  《 【  〖〈   半角：( [ { &lt;
+wky 右括号，全角：） 〕  ］ ｝ 》  】 〗 〉 半角： ) ] { &gt;
+wyz 左引号，全角：“ ‘ 『 
+wyy 右引号，全角：” ’ 』
+wj 句号，全角：。
+ww 问号，全角：？ 半角：?
+wt 叹号，全角：！ 半角：!
+wd 逗号，全角：， 半角：,
+wf 分号，全角：； 半角： ;
+wn 顿号，全角：、
+wm 冒号，全角：： 半角： <span class="hljs-symbol">:</span>
+ws 省略号，全角：……  …
+wp 破折号，全角：——   －－   ——－   半角：---  ----
+wb 百分号千分号，全角：％ ‰   半角：%
+wh 单位符号，全角：￥ ＄ ￡  °  ℃  半角：<span class="hljs-variable">$
+</span></code></pre></article>
+	</div>
+
+<script>
+	function getQueryString() {
+		var strs = location.href.split("?name=") ;
+		return strs[1] ;
+	}
+ 	$(document).ready(function(){
+		$.get("markdown/"+getQueryString("name")+".md",function(data,status){
+			$("#content").html(marked(data));
+			hljs.initHighlighting();
+		});
+	});
+		
+</script>
+
+
+
+
+</body></html>

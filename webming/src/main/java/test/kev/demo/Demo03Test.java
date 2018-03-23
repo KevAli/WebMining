@@ -1,7 +1,7 @@
 package test.kev.demo;
 
 import kev.demo.Demo03;
-import kev.participle.TextRead;
+import kev.participle.TextReadAndWrite;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -31,7 +31,7 @@ public class Demo03Test {
     @Test
     public void testTestAnanlyzer() throws Exception {
         Demo03 demo03 = new Demo03();
-        String text = TextRead.textRead("E:\\a.txt");
+        String text = TextReadAndWrite.textRead("E:\\a.txt");
         demo03.testAnanlyzer(text);
     }
 

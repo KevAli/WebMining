@@ -1,6 +1,6 @@
 package test.kev.participle;
 
-import kev.participle.TextRead;
+import kev.participle.TextReadAndWrite;
 import kev.participle.TextTowordAnsj;
 import kev.participle.Tools;
 import kev.participle.Word;
@@ -34,7 +34,7 @@ public class TextTowordAnsjTest {
      */
     @Test
     public void testTextToWordText() throws Exception {
-        String text = TextRead.textRead("E:\\a.txt");
+        String text = TextReadAndWrite.textRead("E:\\a.txt");
         List<Word> wordList = TextTowordAnsj.textToWord(text);
 //        for (Word word : wordList) {
 //            System.out.println(word);
