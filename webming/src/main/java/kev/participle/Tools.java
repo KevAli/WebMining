@@ -88,7 +88,14 @@ public class Tools {
     public static List<Word> getTopT(List<Word> wordList, int t) {
         Collections.sort(wordList, new Comparator<Word>() {
             public int compare(Word o1, Word o2) {
-                return (int) (o2.getPrValue() - o1.getPrValue());
+                double diff = o2.getPrValue() - o1.getPrValue();
+                if (diff > 0) {
+                    return 1;
+                } else if (diff == 0) {
+                    return 0;
+                } else {
+                    return -1;
+                }
             }
         });
         List<Word> topTList = wordList.subList(0, t);

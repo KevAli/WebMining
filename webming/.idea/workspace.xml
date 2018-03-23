@@ -16,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AbstractList.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk/src.zip!/java/util/AbstractList.java">
+      <file leaf-file-name="Demo01.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kev/demo/Demo01.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7864">
-              <caret line="539" column="0" lean-forward="false" selection-start-line="539" selection-start-column="0" selection-end-line="539" selection-end-column="0" />
+            <state relative-caret-position="38">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -55,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/kev/participle/PageRank.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
-              <caret line="30" column="40" lean-forward="true" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+              <caret line="30" column="40" lean-forward="false" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#423#437#0" expanded="true" />
@@ -65,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PageRankTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PageRankTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/test/kev/participle/PageRankTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
-              <caret line="51" column="75" lean-forward="true" selection-start-line="51" selection-start-column="75" selection-end-line="51" selection-end-column="75" />
+            <state relative-caret-position="147">
+              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -111,16 +111,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tools.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Tools.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/kev/participle/Tools.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="29" column="80" lean-forward="false" selection-start-line="29" selection-start-column="80" selection-end-line="29" selection-end-column="80" />
+            <state relative-caret-position="250">
+              <caret line="92" column="27" lean-forward="true" selection-start-line="92" selection-start-column="27" selection-end-line="92" selection-end-column="27" />
               <folding>
                 <element signature="e#435#441#0" expanded="true" />
                 <element signature="e#1244#1261#0" expanded="true" />
                 <element signature="e#1868#1874#0" expanded="true" />
                 <element signature="e#2592#2598#0" expanded="true" />
+                <element signature="e#3315#3685#0" expanded="true" />
+                <element signature="e#3684#3685#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -205,7 +207,6 @@
         <option value="$PROJECT_DIR$/src/main/java/kev/participle/mapToList.java" />
         <option value="$PROJECT_DIR$/src/main/java/kev/participle/TextTowordSmartCh.java" />
         <option value="$PROJECT_DIR$/src/main/java/test/kev/participle/WordTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kev/participle/Tools.java" />
         <option value="$PROJECT_DIR$/src/main/java/test/kev/participle/TextTowordAnsjTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/kev/participle/TextTowordAnsj.java" />
         <option value="$PROJECT_DIR$/src/main/java/kev/participle/pageRank.java" />
@@ -213,6 +214,7 @@
         <option value="$PROJECT_DIR$/src/main/java/test/kev/participle/pageRankTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/kev/participle/PageRank.java" />
         <option value="$PROJECT_DIR$/src/main/java/test/kev/participle/PageRankTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kev/participle/Tools.java" />
       </list>
     </option>
   </component>
@@ -264,6 +266,77 @@
             <path>
               <item name="WebMing" type="b2602c69:ProjectViewProjectNode" />
               <item name="webming" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebMing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webming" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebMing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webming" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebMing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webming" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebMing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webming" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kev" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebMing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webming" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kev" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebMing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webming" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kev" type="462c0819:PsiDirectoryNode" />
+              <item name="participle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebMing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webming" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebMing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webming" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="kev" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebMing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webming" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="kev" type="462c0819:PsiDirectoryNode" />
+              <item name="participle" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -532,23 +605,11 @@
       <updated>1521436599925</updated>
       <workItem from="1521436601240" duration="4296000" />
       <workItem from="1521518999515" duration="11890000" />
-      <workItem from="1521552234424" duration="40257000" />
+      <workItem from="1521552234424" duration="41318000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PageRankTest_testPageRank - 2018.03.23 at 11h 38m 25s.xml">
-      <configuration name="PageRankTest.testPageRank" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PageRankTest_testPageRank - 2018.03.23 at 11h 39m 05s.xml">
-      <configuration name="PageRankTest.testPageRank" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PageRankTest_testPageRank - 2018.03.23 at 11h 39m 25s.xml">
-      <configuration name="PageRankTest.testPageRank" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PageRankTest_testPageRank - 2018.03.23 at 11h 44m 28s.xml">
-      <configuration name="PageRankTest.testPageRank" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PageRankTest_testPageRank - 2018.03.23 at 11h 44m 52s.xml">
       <configuration name="PageRankTest.testPageRank" configurationId="JUnit" />
     </history-entry>
@@ -567,9 +628,21 @@
     <history-entry file="PageRankTest_testPageRank - 2018.03.23 at 11h 54m 30s.xml">
       <configuration name="PageRankTest.testPageRank" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PageRankTest_testPageRank - 2018.03.23 at 12h 06m 07s.xml">
+      <configuration name="PageRankTest.testPageRank" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PageRankTest_testPageRank - 2018.03.23 at 12h 08m 29s.xml">
+      <configuration name="PageRankTest.testPageRank" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PageRankTest_testPageRank - 2018.03.23 at 12h 12m 01s.xml">
+      <configuration name="PageRankTest.testPageRank" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PageRankTest_testPageRank - 2018.03.23 at 12h 12m 25s.xml">
+      <configuration name="PageRankTest.testPageRank" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56443000" />
+    <option name="totallyTimeSpent" value="57504000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -582,6 +655,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286638" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
@@ -593,13 +667,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15405117" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15405117" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286638" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46630436" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46630436" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -749,14 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="760">
           <caret line="73" column="37" lean-forward="false" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kev/demo/Demo01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -945,19 +1011,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kev/participle/Tools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="29" column="80" lean-forward="false" selection-start-line="29" selection-start-column="80" selection-end-line="29" selection-end-column="80" />
-          <folding>
-            <element signature="e#435#441#0" expanded="true" />
-            <element signature="e#1244#1261#0" expanded="true" />
-            <element signature="e#1868#1874#0" expanded="true" />
-            <element signature="e#2592#2598#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kev/participle/TextTowordAnsj.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1028,10 +1081,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kev/demo/Demo01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kev/participle/PageRank.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="30" column="40" lean-forward="true" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+          <caret line="30" column="40" lean-forward="false" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#423#437#0" expanded="true" />
@@ -1042,9 +1103,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/test/kev/participle/PageRankTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="51" column="75" lean-forward="true" selection-start-line="51" selection-start-column="75" selection-end-line="51" selection-end-column="75" />
+        <state relative-caret-position="147">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kev/participle/Tools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="92" column="27" lean-forward="true" selection-start-line="92" selection-start-column="27" selection-end-line="92" selection-end-column="27" />
+          <folding>
+            <element signature="e#435#441#0" expanded="true" />
+            <element signature="e#1244#1261#0" expanded="true" />
+            <element signature="e#1868#1874#0" expanded="true" />
+            <element signature="e#2592#2598#0" expanded="true" />
+            <element signature="e#3315#3685#0" expanded="true" />
+            <element signature="e#3684#3685#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

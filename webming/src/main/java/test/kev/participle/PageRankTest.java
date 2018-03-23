@@ -52,7 +52,12 @@ public class PageRankTest {
         System.out.println(wordList.size() + "---" + wordGraphList.size());
         wordGraphList = PageRank.pageRank(wordGraphList, 0.01);
         for (Word word : wordGraphList) {
-            System.out.println(word.getValue()+"----"+word.getPrValue());
+            System.out.println(word.getValue() + "----" + word.getPrValue());
+        }
+        System.out.println("---------------------------------------------------");
+        List<Word> topT = Tools.getTopT(wordGraphList, 10);
+        for (Word word : topT) {
+            System.out.println(word.getValue() + "----" + word.getPrValue());
         }
 
     }
