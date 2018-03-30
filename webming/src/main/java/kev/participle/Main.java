@@ -52,6 +52,7 @@ public class Main {
                 }
             }
         }
+        System.out.println("------------------------------------");
         //计算句子的特征向量长度，显示句子的特征向量
         for (Sentence sentence : sentenceList) {
             sentence.setVecLength();
