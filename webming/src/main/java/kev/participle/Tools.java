@@ -24,14 +24,14 @@ import java.util.*;
  */
 public class Tools {
     //把map封装成一个List返回，因为要先判断词性，这个函数用不上
-    public static List<Word> mapWordoList(Map<String, List<Integer>> map, String type) {
-        List<Word> list = new ArrayList<Word>();
-        for (String key : map.keySet()) {
-            Word word = new Word(key, map.get(key), type);
-            list.add(word);
-        }
-        return list;
-    }
+//    public static List<Word> mapWordoList(Map<String, List<Integer>> map, String type) {
+//        List<Word> list = new ArrayList<Word>();
+//        for (String key : map.keySet()) {
+//            Word word = new Word(key, map.get(key), type);
+//            list.add(word);
+//        }
+//        return list;
+//    }
 
     //计算两个Word之间的距离
     public static int distanceOfTwoWords(Word word1, Word word2) {
@@ -45,35 +45,35 @@ public class Tools {
         return mixDistance;
     }
 
-    //建图，用邻接表的方式记录每一条边，无向边的形式存储,边记录在一个新的map
-    public static Map<Word, Set<Word>> buildGraph(List<Word> wordList, int distance) {
-        Map<Word, Set<Word>> wordGraph = new HashMap<Word, Set<Word>>();
-        for (int i = 0; i < wordList.size(); i++) {
-            for (int j = 0; j < wordList.size(); j++) {
-                Word word1 = wordList.get(i);
-                Word word2 = wordList.get(j);
-                int dis = distanceOfTwoWords(word1, word2);
-                if (i != j && dis < distance) {
-                    if (wordGraph.containsKey(word1)) {
-                        wordGraph.get(word1).add(word2);
-                        System.out.println(word1.getValue() + "---" + wordGraph.get(word1).size());
-                    } else {
-                        Set<Word> words = new HashSet<Word>();
-                        words.add(word2);
-                        wordGraph.put(word1, words);
-                        System.out.println(wordGraph.get(word1).size());
-                    }
-                }
-            }
-        }
-        System.out.println("----------------------------------");
-        for (Word word : wordGraph.keySet()) {
-            //此处不知为何会出现Null值
-            System.out.println(wordGraph.get(word).size());
-            word.setNeighborCount(wordGraph.get(word).size());
-        }
-        return wordGraph;
-    }
+    //建图，用邻接表的方式记录每一条边，无向边的形式存储,边记录在一个新的map,该方法有bug
+//    public static Map<Word, Set<Word>> buildGraph(List<Word> wordList, int distance) {
+//        Map<Word, Set<Word>> wordGraph = new HashMap<Word, Set<Word>>();
+//        for (int i = 0; i < wordList.size(); i++) {
+//            for (int j = 0; j < wordList.size(); j++) {
+//                Word word1 = wordList.get(i);
+//                Word word2 = wordList.get(j);
+//                int dis = distanceOfTwoWords(word1, word2);
+//                if (i != j && dis < distance) {
+//                    if (wordGraph.containsKey(word1)) {
+//                        wordGraph.get(word1).add(word2);
+//                        System.out.println(word1.getValue() + "---" + wordGraph.get(word1).size());
+//                    } else {
+//                        Set<Word> words = new HashSet<Word>();
+//                        words.add(word2);
+//                        wordGraph.put(word1, words);
+//                        System.out.println(wordGraph.get(word1).size());
+//                    }
+//                }
+//            }
+//        }
+//        System.out.println("----------------------------------");
+//        for (Word word : wordGraph.keySet()) {
+//            //此处不知为何会出现Null值
+//            System.out.println(wordGraph.get(word).size());
+//            word.setNeighborCount(wordGraph.get(word).size());
+//        }
+//        return wordGraph;
+//    }
 
     //建图，用邻接表的方式记录每一条边，无向边的形式存储，边记录在Word的neighbors属性中
     public static List<Word> buildGraphList(List<Word> wordList, int distance) {
@@ -138,6 +138,7 @@ public class Tools {
 
     public static List<String> wordTOPhrase(List<Word> wordList) {
         Set<String> PhraseSet = new HashSet<String>();
+        System.out.println(wordList.size());
         for (int i = 0; i < wordList.size(); i++) {
             for (int j = i; j < wordList.size(); j++) {
                 Word word1 = wordList.get(i);
@@ -145,13 +146,15 @@ public class Tools {
                 if (word1.getValue() != word2.getValue()) {
                     for (int index1 : word1.getIndexList()) {
                         for (int index2 : word2.getIndexList()) {
-                            if (Math.abs((index1 + word1.getValue().length()) - index2) <= 1) {
-                                Word phrase = new Word(word1.getValue() + word2.getValue(), word1.getIndexList(), word1.getType());
+                            if (Math.abs((index1 + word1.getValue().length()) - index2) == 1) {
+//                                Word phrase = new Word(word1.getValue() + word2.getValue(), word1.getIndexList(), word1.getType());
                                 PhraseSet.add(word1.getValue() + word2.getValue());
+                                break;
                             }
-                            if (Math.abs((index2 + word2.getValue().length()) - index1) <= 1) {
-                                Word phrase = new Word(word2.getValue() + word1.getValue(), word2.getIndexList(), word2.getType());
+                            if (Math.abs((index2 + word2.getValue().length()) - index1) == 1) {
+//                                Word phrase = new Word(word2.getValue() + word1.getValue(), word2.getIndexList(), word2.getType());
                                 PhraseSet.add(word2.getValue() + word1.getValue());
+                                break;
                             }
                         }
                     }
@@ -162,5 +165,11 @@ public class Tools {
         return PhraseList;
 
     }
+
+//    public static List<Sentence> word2vec(List<Sentence> sentenceList) {
+//        Word2VecModel vec = new Word2VecModel();
+//
+//        return sentenceList;
+//    }
 
 }

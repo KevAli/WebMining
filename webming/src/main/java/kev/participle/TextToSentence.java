@@ -26,21 +26,18 @@ public class TextToSentence {
         //String[] sentences = text.split("。|：|！|？");
         List<Sentence> sentencesList = new ArrayList<Sentence>();
         /*将句子结束符连接到相应的句子后*/
-        if(sentences.length > 0)
-        {
+        if (sentences.length > 0) {
             int count = 0;
-            while(count < sentences.length)
-            {
-                if(m.find())
-                {
+            while (count < sentences.length) {
+                if (m.find()) {
                     sentences[count] += m.group();
                 }
                 count++;
             }
         }
         for (int i = 0; i < sentences.length; i++) {
-            sentencesList.add(new Sentence("sentence" + Integer.toString(i), sentences[i]));
-            System.out.println(i + "-----" + sentences[i]);
+            sentencesList.add(new Sentence(sentences[i]));
+//            System.out.println(i + "-----" + sentences[i]);
         }
         return sentencesList;
     }

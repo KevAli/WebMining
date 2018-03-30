@@ -4,6 +4,9 @@ import org.ansj.domain.Result;
 import org.ansj.domain.Term;
 import org.ansj.splitWord.analysis.ToAnalysis;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.util.*;
 
 /**
@@ -22,20 +25,23 @@ public class TextTowordAnsj {
         Set<String> expectedNature = new HashSet<String>() {{
             add("n");
             add("v");
-//            add("vd");
-//            add("vn");
-//            add("vf");
-//            add("vx");
-//            add("vi");
-//            add("vl");
-//            add("vg");
-//            add("nt");
-//            add("nz");
-//            add("nw");
-//            add("nl");
-//            add("ng");
-//            add("wh");
+            add("vd");
+            add("vn");
+            add("vf");
+            add("vx");
+            add("vi");
+            add("vl");
+            add("vg");
+            add("nt");
+            add("nz");
+            add("nw");
+            add("nl");
+            add("ng");
+            add("wh");
         }};
+//        FilterModifWord.insertStopWord("并且") ;
+//        FilterModifWord.insertStopWord("但是") ;
+//        FilterModifWord.setUpdateDic(strHashMap);
         //分词结果的一个封装，主要是一个List<Term>的terms
         Result result = ToAnalysis.parse(text);
 //        System.out.println(result.getTerms());
@@ -72,5 +78,45 @@ public class TextTowordAnsj {
     public static List<Word> textToWord(List<Sentence> sentenceList) {
 
         return new ArrayList<Word>();
+    }
+
+    public static Set<String> getStopWord(String stopWordPath) {
+        Set<String> stopWord = new HashSet<String>();
+        File textFile = new File(stopWordPath);
+        BufferedReader reader = null;
+        String tempString = null;
+        try {
+            reader = new BufferedReader(new FileReader(textFile));
+            while ((tempString = reader.readLine()) != null) {
+                stopWord.add(tempString);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                reader.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return stopWord;
+    }
+
+    public static List<Word> detachStopWord(List<Word> wordList, Set<String> stopWords) {
+        Iterator<Word> wordIterator = wordList.iterator();
+        while (wordIterator.hasNext()) {
+            //Word word = wordIterator.next();
+            if (stopWords.contains(wordIterator.next().getValue())) {
+                wordIterator.remove();
+            }
+        }
+//        删除要改变结构，需要使用迭代器
+//        for (Word word : wordList) {
+//            if (stopWords.contains(word.getValue())) {
+//                wordList.remove(word);
+//            }
+//        }
+        return wordList;
     }
 }

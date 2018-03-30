@@ -34,7 +34,7 @@ public class PageRank {
             }
         }
         for (Word word : wordGraph) {
-            double newPR = prMap.get(word) * 0.85 + 0.15 * totalPR / prCount;
+            double newPR = prMap.get(word) * 0.85 + 0.15;//* totalPR / prCount;
             word.setPrValue(newPR);
         }
         return wordGraph;

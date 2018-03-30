@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.ansj:ansj_seg:min:LATEST">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/ansj/ansj_seg/LATEST/ansj_seg-LATEST-min.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/ansj/ansj_seg/LATEST/ansj_seg-LATEST-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/ansj/ansj_seg/LATEST/ansj_seg-LATEST-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
